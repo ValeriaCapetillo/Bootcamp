@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a OtteApp</title>
+  </head>
+  <body>
+    <h1>Formulario de Inscripción - Estudiante Nuevo</h1>
+    <p>
+      Por favor, completa todos los campos para la inscripción del estudiante.
+    </p>
+
+    <form
+      action="/enviar-inscripcion"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Datos del Estudiante</legend>
+
+        <label for="nombre_estudiante">Nombre Completo:</label><br />
+        <input
+          type="text"
+          id="nombre_estudiante"
+          name="nombre_estudiante"
+          required
+        /><br /><br />
+
+        <label for="rut_estudiante">RUT:</label><br />
+        <input
+          type="text"
+          id="rut_estudiante"
+          name="rut_estudiante"
+          required
+        /><br /><br />
+
+        <label for="fecha_nacimiento_estudiante">Fecha de Nacimiento:</label
+        ><br />
+        <input
+          type="date"
+          id="fecha_nacimiento_estudiante"
+          name="fecha_nacimiento_estudiante"
+          required
+        /><br /><br />
+
+        <label for="grado">Curso al que se inscribe:</label><br />
+        <select id="grado" name="grado" required>
+          <option value="">-- Seleccione un curso --</option>
+          <option value="kinder">Kínder</option>
+          <option value="1-basico">1° Básico</option>
+          <option value="2-basico">2° Básico</option>
+          <option value="3-basico">3° Básico</option>
+          <option value="4-basico">4° Básico</option>
+          <option value="5-basico">5° Básico</option>
+          <option value="6-basico">6° Básico</option>
+          <option value="7-basico">7° Básico</option>
+          <option value="8-basico">8° Básico</option>
+          <option value="1-medio">1° Medio</option>
+          <option value="2-medio">2° Medio</option>
+          <option value="3-medio">3° Medio</option>
+          <option value="4-medio">4° Medio</option></select
+        ><br /><br />
+
+        <label for="direccion_estudiante">Dirección:</label><br />
+        <textarea
+          id="direccion_estudiante"
+          name="direccion_estudiante"
+          rows="3"
+          required
+        ></textarea
+        ><br /><br />
+
+        <label for="telefono_estudiante">Teléfono:</label><br />
+        <input
+          type="tel"
+          id="telefono_estudiante"
+          name="telefono_estudiante"
+        /><br /><br />
+
+        <label for="email_estudiante">Correo Electrónico:</label><br />
+        <input
+          type="email"
+          id="email_estudiante"
+          name="email_estudiante"
+        /><br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Datos del apoderado/Tutor</legend>
+
+        <label for="nombre_apoderado">Nombre completo:</label><br />
+        <input
+          type="text"
+          id="nombre_apoderado"
+          name="nombre_apoderado"
+          required
+        /><br /><br />
+
+        <label for="rut_apoderado">RUT:</label><br />
+        <input
+          type="text"
+          id="rut_apoderado"
+          name="rut_apoderado"
+          required
+        /><br /><br />
+
+        <label for="parentesco">Parentesco con el estudiante:</label><br />
+        <input
+          type="text"
+          id="parentesco"
+          name="parentesco"
+          required
+        /><br /><br />
+
+
+        <label for="telefono_apoderado">Teléfono de Contacto:</label><br />
+        <input
+          type="tel"
+          id="telefono_apoderado"
+          name="telefono_apoderado"
+          required
+        /><br /><br />
+
+        <label for="email_apoderado">Correo Electrónico:</label><br />
+        <input
+          type="email"
+          id="email_apoderado"
+          name="email_apoderado"
+        /><br /><br />
+
+        <label for="ocupacion_apoderado">Ocupación:</label><br />
+        <input
+          type="text"
+          id="ocupacion_apoderado"
+          name="ocupacion_apoderado"
+        /><br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Documentación</legend>
+
+        <label for="autorizacion_firmada">Autorización Firmada:</label><br />
+        <p>
+          Sube la autorización de uso de datos y fotografías firmada. Puedes
+          subir una imagen o escanear el documento firmado.
+        </p>
+        <input
+          type="file"
+          id="autorizacion_firmada"
+          name="autorizacion_firmada"
+          accept="image/*,.pdf"
+          required
+        /><br /><br />
+
+      <br />
+
+      <fieldset>
+        <legend>Términos y condiciones</legend>
+
+        <input
+          type="checkbox"
+          id="acepta_terminos"
+          name="acepta_terminos"
+          value="si"
+          required
+        />
+        <label for="acepta_terminos"
+          >Acepto los términos y condiciones del uso de la aplicación del
+          colegio, incluyendo el uso de datos personales y fotografías para
+          fines educativos y de comunicación institucional.</label
+        ><br /><br />
+
+        <input
+          type="checkbox"
+          id="autoriza_contacto"
+          name="autoriza_contacto"
+          value="si"
+        />
+        <label for="autoriza_contacto"
+          >Autorizo al colegio a contactarme por correo electrónico o teléfono
+          para información relacionada con el estudiante.</label
+        ><br /><br />
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="Enviar Inscripción" />
+      <input type="reset" value="Limpiar Formulario" />
+    </form>
+  </body>
+</html>
