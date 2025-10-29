@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+.header {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+
+.profile-card {
+    width: 250px;
+    border: 2px gray;
+    border-radius: 10px;
+    padding: 60px;
+    text-align: center;
+    background-color: white;
+    margin-right: 30px;
+
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.feed-container {
+    flex: 1;
+}
+
+.feed-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.post-card {
+    border: 2px gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-author {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.like-count {
+    font-size: 16px;
+}
+
+.like-button {
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-content a {
+    color: blue;
+    text-decoration: underline;
+}
