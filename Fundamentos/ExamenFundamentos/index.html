@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargaze</title>
+    <link rel="stylesheet" href="/ExamenFundamentos/style.css">
+    <script src="/ExamenFundamentos/js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo">✶ Stargaze ✶</div>
+        <div class="top-bar-icons">
+            <i class="material-icons">info</i>
+            <i class="material-icons">email</i>
+            <i class="material-icons">call</i>
+        </div>
+    </div>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">Planetas</a>
+            <a href="#">Estrellas</a>
+            <a href="#">Constelaciones</a>
+            <a href="#">Estrellas Fugaces</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar">
+            <button id="searchButton">🔍</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="feed">
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="author-info">
+                        <img src="https://img.icons8.com/ios-glyphs/90/000000/user-male-circle.png" alt="User Avatar"
+                            class="avatar">
+                        <div>
+                            <p class="author-name">Estrellados</p>
+                            <p class="post-time">Hace 6 minutos</p>
+                        </div>
+                    </div>
+                    <div class="options">...</div>
+                </div>
+                <p class="post-content">Quiero compartir con mis amigos esta bella constelación que encontré hace un par
+                    de días.</p>
+                <div class="post-image-placeholder">
+                    <img src="/ExamenFundamentos/img/constelaciones.png" alt="Constelaciones"
+                        class="post-image-placeholder">
+                    <div>
+                        <footer class="post-footer">
+                            <div class="interaction">
+                                <button class="like-btn">
+                                    <i class="material-icons">thumb_up</i>
+                                </button>
+                                <span class="like-count">50</span>
+                            </div>
+                            <div class="interaction">
+                                <button id="heartBtn">
+                                    <i class="material-icons">favorite_border</i>
+                                </button>
+                                <span id="heartCount">21</span>
+                            </div>
+                        </footer>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Publicidad</h3>
+            <div class="ad-card">
+                <p>Tenemos las noticias estelares</p>
+                <p><i class="material-icons ad-icon">star</i></p>
+                <button class="follow-btn">Seguir</button>
+            </div>
+            <div class="ad-card">
+                <p>Recibe recompensas de otro planeta</p>
+                <p><i class="material-icons ad-icon">stars</i></p>
+                <button class="follow-btn">Seguir</button>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>

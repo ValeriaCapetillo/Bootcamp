@@ -1,48 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Reset ligero */
+* {box-sizing: border-box; margin: 0; padding: 0;}
+html,body {height: 100%;}
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
-
 .header {
-    background-color: palevioletred;
+    background-color: #444;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 24px;
+    padding: 12px 0;  
+    font-size: 22px;  
     font-weight: bold;
 }
-
-
+/* Contenedor principal (perfil + feed) */
 .container {
     display: flex;
-    align-items: center;
-    margin: 50px;
+    align-items: flex-start;  
+    padding: 20px;
+    gap: 30px;
 }
 
-
+/* Tarjeta de perfil   */
 .profile-card {
     width: 250px;
-    border: 2px gray;
-    border-radius: 10px;
-    padding: 60px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 30px 20px;
     text-align: center;
     background-color: white;
-    margin-right: 30px;
-
+    flex-shrink: 0; 
+    margin-top: 75px; 
 }
 
+/* Imagen/ícono de perfil circular */
 .profile-image {
     width: 150px;
     height: 150px;
     background-color: white;
-    border: 3px solid gray;
+    border: 3px solid #000;
     border-radius: 50%;
     margin: 0 auto 20px;
     display: flex;
@@ -51,31 +48,35 @@ body {
     font-size: 80px;
 }
 
+/* Nombre del usuario */
 .profile-name {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
-
+/* Contenedor del feed de publicaciones */
 .feed-container {
     flex: 1;
 }
 
+/* Título del feed */
 .feed-title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 0; 
 }
 
+/* Cada tarjeta de publicación */
 .post-card {
-    border: 2px gray;
-    border-radius: 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
     background-color: white;
 }
 
+/* Header de cada post (nombre + likes) */
 .post-header {
     display: flex;
     justify-content: space-between;
@@ -83,23 +84,27 @@ body {
     margin-bottom: 15px;
 }
 
+/* Nombre del autor del post */
 .post-author {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
+/* Sección de likes (contador + botón) */
 .like-section {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* Contador de likes */
 .like-count {
     font-size: 16px;
 }
 
+/* Botón de Like */
 .like-button {
-    background-color: pink;
+    background-color: #FFD700;
     color: black;
     border: none;
     padding: 10px 30px;
@@ -107,13 +112,16 @@ body {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+/* Contenido del post */
 .post-content {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
+/* Enlaces dentro de los posts */
 .post-content a {
     color: blue;
     text-decoration: underline;

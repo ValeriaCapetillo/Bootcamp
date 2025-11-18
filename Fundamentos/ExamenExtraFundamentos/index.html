@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRecicla</title>
+    <link rel="stylesheet" href="/Fundamentos/ExamenExtraFundamentos/style.css">
+    <script src="/Fundamentos/ExamenExtraFundamentos/js/script.js"></script>
+</head>
+
+<!--Encabezado de la página-->
+<header>
+    <div class="logo">EcoRecicla</div>
+    <nav>
+        <a href="#">Sobre el programa</a>
+        <a href="#">¿Dónde puedo reciclar?</a>
+        <a href="#" id="enlace-reciclar">¿Qué puedo reciclar?</a>
+    </nav>
+</header>
+
+<!--Cuerpo de la página-->
+
+<body>
+    <main>
+        <!-- imagenes clicleables: Reducir, Reusar, Reciclar -->
+        <section class="acciones">
+            <div class="item-accion" id="reducir">
+                <!-- La imagen del ícono cambiará con JS. Le ponemos un id para controlarla -->
+                <img src="/Fundamentos/ExamenExtraFundamentos/img/reduce.png" alt="Reducir" id="imagen-reducir">
+                <p>Reduce</p>
+            </div>
+            <div class="item-accion" id="Reusar">
+                <!-- Ícono para Reusar, también con su id -->
+                <img src="/Fundamentos/ExamenExtraFundamentos/img/reusa.png" alt="Reusar" id="imagen-Reusar">
+                <p>Reusa</p>
+            </div>
+            <div class="item-accion" id="reciclar">
+                <img src="/Fundamentos/ExamenExtraFundamentos/img/recicla.png" alt="Reciclar">
+                <p>Recicla</p>
+            </div>
+        </section>
+
+        <!-- Sección para aprender a reciclar desde el hogar -->
+        <section class="aprende-en-casa">
+            <h2>Aprende a reciclar desde tu hogar</h2>
+            <!-- grilla para ordenar los elementos -->
+            <div class="grilla-aprender">
+                <div class="item-aprender">
+                    <span>Organiza tu espacio para reciclar</span>
+                    <img src="/Fundamentos/ExamenExtraFundamentos/img/espacio.png" alt="Ícono de organizar">
+                </div>
+                <div class="item-aprender">
+                    <span>Crea una composta para residuos orgánicos</span>
+                    <img src="/Fundamentos/ExamenExtraFundamentos/img/organicos.png" alt="Ícono de composta">
+                </div>
+                <div class="item-aprender">
+                    <span>Separa y clasifica los residuos</span>
+                    <img src="/Fundamentos/ExamenExtraFundamentos/img/separa.png" alt="Ícono de separar">
+                </div>
+                <div class="item-aprender">
+                    <span>Incorpora energías renovables</span>
+                    <img src="/Fundamentos/ExamenExtraFundamentos/img/energias.png" alt="Ícono de energía">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Banner de cookies -->
+    <div class="banner-cookies" id="banner-cookies">
+        <div class="contenido-cookie">
+            <img src="/Fundamentos/ExamenExtraFundamentos/img/cookies.png" alt="Cookies" id="imagen-cookies">
+            <p>EcoRecicla utiliza cookies para optimizar la navegación según tus preferencias. Al hacer click en
+                'aceptar' estás de acuerdo con nuestra <a href="#">política de privacidad</a></p>
+            <button id="aceptar-cookies">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>EcoRecicla - Todos los derechos reservados ©</p>
+        <a href="#">Términos y Condiciones</a>
+    </footer>
+
+</body>
+
+</html>

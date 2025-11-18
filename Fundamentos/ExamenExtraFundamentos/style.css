@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos del body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Encabezado de la página */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0 0px 32px;
+    background-color: #fff;
+}
+/* Simular un logo de EcoRecicla */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #69A84F;
+    margin: 0;
+}
+/* Barra de navegación verde */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #69A84F;
+    padding: 16px 32px 16px 32px;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+/* Enlaces de navegación */
+nav a {
+    margin: 0 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Cambia a blanco al pasar el mouse */
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Contenedor principal */
+main {
+    padding: 32px;
+}
+
+/* Sección de acciones (Reduce, Reusa, Recicla) */
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Muestra que es clickeable al pasar el mouse */
+.item-accion {
+    cursor: pointer;
+}
+/* Imágenes de las acciones */
+.item-accion img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+/* Sección "Aprende en casa" */
+.aprende-en-casa {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Título de la sección en verde tipo banner*/
+.aprende-en-casa h2 {
+    background-color: #B6D7A8;
+    padding: 16px;
+    margin: 0 -32px 32px -32px;
+}
+/* Grilla de los 4  elementos para aprender */
+.grilla-aprender {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    gap: 24px;
+}
+/* Cada elemento de la grilla */
+.item-aprender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+    padding: 16px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+/* Íconos circulares de los elementos de la grilla */
+.item-aprender img {
+    width: 50px;
+    height: 50px;
+    background-color: #69A84F;
+    padding: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Pie de página(footer) */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #B6D7A8;
+    border-top: 2px solid #e0e0e0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+/* Enlace del footer */
+footer a {
+    color: #16a1cc;
+    text-decoration: underline;
+}
+/* Banner de cookies (fijo en la parte inferior) */
+.banner-cookies {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: black;
+    padding: 16px 20px;
+    z-index: 1000;
+    border: 2px solid black;
+}
+/* Contenedor del contenido del banner */
+.contenido-cookie {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* Imagen de la cookie que es una cookie */
+#imagen-cookies {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+/* Contenedor del contenido del banner */
+.contenido-cookie p {
+    margin: 0;
+    flex: 1;
+    font-size: 14px;
+}
+
+/* Enlaces dentro del banner */
+.contenido-cookie a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Botón de aceptar cookies */
+#aceptar-cookies {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
