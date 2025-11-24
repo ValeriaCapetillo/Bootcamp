@@ -30,7 +30,7 @@ public class Aplicacion {
         cuenta3.depositar(2000.00);
         System.out.println();
 
-        System.out.println("💰 SALDOS ACTUALES 💰");
+        System.out.println("💰SALDOS ACTUALES 💰");
         System.out.println("Saldo Cuenta 1: $" + cuenta1.getSaldo());
         System.out.println("Saldo Cuenta 2: $" + cuenta2.getSaldo());
         System.out.println("Saldo Cuenta 3: $" + cuenta3.getSaldo());
