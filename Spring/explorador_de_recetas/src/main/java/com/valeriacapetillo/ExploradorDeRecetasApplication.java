@@ -1,4 +1,4 @@
-package com.valeriacapetillo.explorador_de_recetas;
+package com.valeriacapetillo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
