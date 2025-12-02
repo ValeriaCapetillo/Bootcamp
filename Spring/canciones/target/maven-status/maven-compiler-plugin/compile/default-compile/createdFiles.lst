@@ -1,0 +1,5 @@
+com/valeriacapetillo/canciones/controllers/ControladorCanciones.class
+com/valeriacapetillo/canciones/repositories/CancionRepositorio.class
+com/valeriacapetillo/canciones/CancionesApplication.class
+com/valeriacapetillo/canciones/services/CancionServicio.class
+com/valeriacapetillo/canciones/models/Cancion.class
